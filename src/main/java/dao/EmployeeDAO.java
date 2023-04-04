@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface EmployeeDAO {
 
-    void create(Employee employee);
+    void create(Employee stuff);
 
     Employee readById(int id);
 
     List<Employee> readAll();
 
-    void updateEntityById(int id, int cityId);
+    void updateEmployeeEntity(Employee stuff);
 
-    void deleteEntityById(int id);
+    void deleteEmployeeEntity(Employee stuff);
 }
