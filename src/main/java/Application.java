@@ -20,7 +20,7 @@ public class Application {
             System.out.println(employee);
         }
 
-//        EmployeeDAO.updateEmployeeEntity(new Stuff(11,"22", "33", "female",35,3));
+//        EmployeeDAO.updateEmployeeEntity(new Employee(11,"22", "33", "female",35,3));
 
         employeeDAO.deleteEmployeeEntity(new Employee(2));
         /*try (Connection connection = DriverManager.getConnection(url, user, pass)) {
@@ -44,7 +44,7 @@ public class Application {
         /*        try (Connection connection = DriverManager.getConnection(url, user, pass)) {
             Statement statement = connection.createStatement();
             int id = 1; // id работника, которого нужно получить
-            // Запрос для получения данных из таблицы stuff и city
+            // Запрос для получения данных из таблицы Employee и city
             String sql = "SELECT e.first_name, e.last_name, e.age, e.gender, e.city_name " +
                     "FROM employee e " +
                     "JOIN city c ON e.city_id = e.city_id " +
